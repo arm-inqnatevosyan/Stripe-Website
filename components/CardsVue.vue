@@ -2,30 +2,30 @@
   <div id="div" class="flex flex-col items-center">
     <div id="div1" class="flex justify-around w-3xl">
       <div class=" w-40 h-14 flex items-center">
-        <img src="../static/instacart.png" width="130" height="40" class="mx-auto">
+        <img src="/instacart.png" width="130" height="40" class="mx-auto">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/salesfore.png" width="70" class="mx-auto">
+        <img src="/salesfore.png" width="70" class="mx-auto">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/amazon.png" width="130" class="mx-auto">
+        <img src="/amazon.png" width="130" class="mx-auto">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/slack.png" width="100" class="mx-auto">
+        <img src="/slack.png" width="100" class="mx-auto">
       </div>
     </div>
     <div id="div2" class="mt-8 flex justify-around w-3xl">
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/shopify.png" width="120" class="mx-auto">
+        <img src="/shopify.png" width="120" class="mx-auto">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/google.png" width="100" class="mx-auto">
+        <img src="/google.png" width="100" class="mx-auto">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/lyft.png" width="50" class="mx-auto">
+        <img src="/lyft.png" width="50" class="mx-auto">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="../static/zoom.png" width="100" class="mx-auto">
+        <img src="/zoom.png" width="100" class="mx-auto">
       </div>
     </div>
   </div>

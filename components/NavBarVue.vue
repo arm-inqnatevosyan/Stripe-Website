@@ -1,16 +1,14 @@
 <template>
-  <nav class="p-5 bg-transparent w-3xl h-80 mx-auto">
+  <nav class="p-5 bg-transparent w-3xl h-80 mx-auto sm:w-full lg:w-3xl">
     <div class="flex items-center justify-between">
-      <img src="../static/bg.png" class="absolute top-0 left-0 w-full h-80 z-0">
-      <!-- Header logo -->
+      <img src="/bg.png" class="absolute top-0 left-0 w-full h-80 z-0">
       <div class="h-10 z-10 flex items-center">
         <h1 class="text-white font-bold text-2xl">
           stripe
         </h1>
       </div>
 
-      <!-- Mobile toggle -->
-      <div class="md:hidden z-10">
+      <div class="lg:hidden z-10">
         <button @click="drawer">
           <svg
             class="h-8 w-8 fill-current text-black"
@@ -26,8 +24,7 @@
         </button>
       </div>
 
-      <!-- Navbar -->
-      <div class="hidden z-10 md:block">
+      <div class="hidden z-10 lg:block">
         <ul class="flex space-x-5 text-sm text-white font-sans" style="font-family: 'Montserrat', sans-serif !important;">
           <li>
             <NuxtLink to="/">
@@ -57,7 +54,6 @@
         </ul>
       </div>
 
-      <!-- Dark Background Transition -->
       <transition
         enter-class="opacity-0"
         enter-active-class="ease-out transition-medium"
@@ -71,7 +67,6 @@
         </div>
       </transition>
 
-      <!-- Drawer Menu -->
       <aside
         class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
         :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
@@ -91,10 +86,6 @@
             </svg>
           </button>
         </div>
-
-        <span class="flex w-full items-center p-4 border-b" @click="isOpen = false">
-          <Tailwind />
-        </span>
 
         <ul class="divide-y font-sans z-10">
           <li>
@@ -120,8 +111,8 @@
           <li><a href="#" class="my-4 inline-block" @click="isOpen = false">Contact</a></li>
         </ul>
       </aside>
-      <div class="z-10 hidden md:block">
-        <button class="text-sm rounded-3xl h-8 w-28 text-white bg-white bg-opacity-25">
+      <div class="z-10 hidden md:hidden xl:block">
+        <button class="text-sm rounded-3xl h-8 w-28 text-white bg-mycolor">
           Sign In
         </button>
       </div>
@@ -151,13 +142,6 @@ export default {
         }
       }
     }
-  },
-  mounted () {
-    document.addEventListener('keydown', (e) => {
-      if (e.keyCode === 27 && this.isOpen) {
-        this.isOpen = false
-      }
-    })
   },
   methods: {
     drawer () {

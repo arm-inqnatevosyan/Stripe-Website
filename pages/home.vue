@@ -1,6 +1,6 @@
 <template>
-  <div id="full">
-    <div id="main" class="w-full h-1/4 z-10 font-sans flex justify-evenly mt-8">
+  <div id="full" class="w-full mx-auto flex justify-center">
+    <div id="main" class="w-33xl h-1/4 z-10 font-sans flex justify-between mx-auto mt-8">
       <div id="texts" class="font-sans">
         <div id="one-list" class="text-7xl font-bold">
           <h3>Financial</h3>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div id="iphone" class="w-70 h-3xl">
-        <img src="../static/iphone.png" class="w-full h-full">
+        <img src="/technology.png" class="w-full h-96">
       </div>
     </div>
   </div>
@@ -54,11 +54,21 @@ export default {
  #texts{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
  }
  #one-list{
     font-size: 50px;
  }
+  #main{
+    width: 100%;
+  }
+}
+@media (max-width:560px){
+  #texts{
+    margin-left: 50px;
+  }
 }
 </style>

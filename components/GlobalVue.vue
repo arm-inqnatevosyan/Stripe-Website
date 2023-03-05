@@ -1,7 +1,7 @@
 <template>
-  <div id="main" class="w-full h-33xl bg-blue-900 flex justify-center mx-auto mb-40">
+  <div id="main" class="w-full z-10 h-33xl bg-blue-900 flex justify-center mx-auto mb-40">
     <div class="flex flex-col w-33xl mt-40 text-white">
-      <div id="main1">
+      <div id="main1" class="z-10">
         <h1 class="text-purple-500 font-bold">
           Global scale
         </h1>
@@ -21,7 +21,7 @@
           <p>ambitious businesses of all sizes.</p>
         </div>
       </div>
-      <div id="main2" class="mt-28 flex justify-between text-white">
+      <div id="main2" class="z-10 mt-28 text-white grid grid-cols-4 tall1:grid-cols-2">
         <div class="text-slate-400">
           <h1 class="font-bold text-2xl text-white">
             250M+
@@ -61,7 +61,7 @@
       </div>
     </div>
     <div>
-      <img id="img" src="../static/globe.png">
+      <img id="img" src="/globe.png">
     </div>
   </div>
 </template>
@@ -74,12 +74,6 @@ export default {
 #main{
     position: relative;
 }
-#main1{
-    z-index: 10 !important;
-}
-#main2{
-    z-index: 10 !important;
-}
 #img{
     position: absolute;
     top: 0px;
@@ -87,17 +81,12 @@ export default {
     height: 100%;
     z-index: 1;
 }
-@media (max-width:992px){
+@media (max-width:1024px){
     #main{
         height: auto !important;
     }
-    #main2{
-      margin-bottom: 30px;
-      display: flex;
-      flex-direction: column;
-    }
     #main2 div{
-        margin-top: 30px;
+        margin-bottom: 30px;
         width: 100%;
     }
 }

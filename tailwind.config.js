@@ -16,8 +16,18 @@ module.exports = {
         '33xl': '80vh'
       },
       width: {
-        '3xl': '73%',
+        '3xl': '83%',
         '33xl': '80%'
+      },
+      marginTop: {
+        '3xl': '130px'
+      },
+      screens: {
+        tall: { raw: '(max-width: 900px)' },
+        tall1: { raw: '(max-width: 1000px)' }
+      },
+      colors: {
+        mycolor: 'hsla(0,0%,100%,0.2)'
       }
     }
   }
