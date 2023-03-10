@@ -1,6 +1,6 @@
 <template>
-  <div id="main" class="bg-blue-900 h-screen">
-    <div id="div" class="flex mt-40 w-33xl justify-between mx-auto">
+  <div class="bg-blue-900 h-screen main">
+    <div class="flex mt-40 w-33xl justify-between mx-auto div">
       <div class="mt-40">
         <div class="text-purple-500 font-bold">
           <h1>Designed for developers</h1>
@@ -23,12 +23,12 @@
           </button>
         </div>
       </div>
-      <div id="code" class="mt-40">
-        <img src="/code.png">
+      <div class="mt-40 code">
+        <img src="/code.png" class="code">
       </div>
     </div>
-    <div id="aside" class="grid grid-cols-4 mt-20 w-33xl  mx-auto pb-8 tall:grid-cols-2 grid-rows-2">
-      <div class="text-slate-400 ml-8 tall1:ml-0">
+    <div class="grid mt-20 w-33xl sm:grid-cols-1 md:grid-cols-2 grid-rows-2 lg:grid-cols-4  mx-auto pb-8 aside">
+      <div class="text-slate-400 div1">
         <h1 class="text-white">
           Use Stripe with your stack
         </h1>
@@ -41,7 +41,7 @@
           See libraries
         </p>
       </div>
-      <div id="div1" class="text-slate-400 ml-8">
+      <div class="text-slate-400 ml-8 div1">
         <h1 class="text-white">
           Try no-code options
         </h1>
@@ -54,7 +54,7 @@
           Explore no-code
         </p>
       </div>
-      <div class="text-slate-400 ml-8 tall:ml-0">
+      <div class="text-slate-400 ml-8 div1">
         <h1 class="text-white">
           Explore prebuilt integrations
         </h1>
@@ -68,7 +68,7 @@
           View connectors
         </p>
       </div>
-      <div id="div1" class="text-slate-400 ml-8">
+      <div class="text-slate-400 ml-8 div1">
         <h1 class="text-white">
           Build an app on Stripe
         </h1>
@@ -92,35 +92,30 @@ export default {
 }
 </script>
 <style scoped>
-#main{
+.main{
   height: auto;
 }
 @media (max-width:576px){
-  #aside{
-  display: flex;
-  flex-direction: column;
+ .aside div{
+  margin-left: 0px !important;
  }
- #aside div{
+ .div1{
   margin-left: 0px !important;
  }
 }
 @media (max-width:768px){
- #main{
+ .main{
   height: auto !important;
   margin-top: 40px;
  }
 }
 @media (max-width:992px){
-  #div{
-  display: flex;
-  flex-direction: column !important;
-  align-items: center;
- }
- #code{
+ .code{
     margin-top: 20px;
+    display: none;
  }
- #div1{
-  margin-left: 20px !important;
+ .div1{
+  margin-left: 0px !important;
  }
 }
 </style>

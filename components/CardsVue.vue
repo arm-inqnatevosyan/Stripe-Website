@@ -1,31 +1,31 @@
 <template>
-  <div id="div" class="flex flex-col items-center">
-    <div id="div1" class="flex justify-around w-3xl">
+  <div class="flex flex-col items-center div">
+    <div class="flex justify-around w-3xl div1">
       <div class=" w-40 h-14 flex items-center">
-        <img src="/instacart.png" width="130" height="40" class="mx-auto">
+        <img src="/instacart.png" class="mx-auto w-28">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="/salesfore.png" width="70" class="mx-auto">
+        <img src="/salesfore.png" class="mx-auto w-16">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="/amazon.png" width="130" class="mx-auto">
+        <img src="/amazon.png" class="mx-auto w-28">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="/slack.png" width="100" class="mx-auto">
+        <img src="/slack.png" class="mx-auto w-24">
       </div>
     </div>
-    <div id="div2" class="mt-8 flex justify-around w-3xl">
+    <div class="mt-8 flex justify-around w-3xl div2">
       <div class="w-40 h-14 flex items-center">
-        <img src="/shopify.png" width="120" class="mx-auto">
+        <img src="/shopify.png" class="mx-auto w-28">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="/google.png" width="100" class="mx-auto">
+        <img src="/google.png" class="mx-auto w-24">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="/lyft.png" width="50" class="mx-auto">
+        <img src="/lyft.png" class="mx-auto w-12">
       </div>
       <div class="w-40 h-14 flex items-center">
-        <img src="/zoom.png" width="100" class="mx-auto">
+        <img src="/zoom.png" class="mx-auto w-24">
       </div>
     </div>
   </div>
@@ -37,30 +37,30 @@ export default {
 </script>
 <style scoped>
 @media (max-width:767px){
- #div{
+ .div{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0px auto !important;
  }
- #div1{
+ .div1{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
  }
- #div1 div{
+ .div1 div{
   margin-top: 50px;
  }
- #div2{
+ .div2{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
  }
- #div2 div{
+ .div2 div{
   margin-top: 50px;
  }
 }

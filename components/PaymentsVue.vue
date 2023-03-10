@@ -47,7 +47,6 @@ export default {
  #div{
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0px auto !important;
  }
  #div2{

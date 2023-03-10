@@ -1,5 +1,5 @@
 <template>
-  <div id="main" class="w-33xl flex mx-auto justify-between mb-40">
+  <div class="w-33xl flex mx-auto justify-between mb-40 main">
     <div class="flex flex-col">
       <h1 class="font-bold text-black text-2xl">
         Ready to get started?
@@ -19,9 +19,9 @@
         </button>
       </div>
     </div>
-    <div id="main1" class="flex">
-      <div id="divs" class="mr-7">
-        <h1 id="div" class="text-slate-800 font-bold pl-3">
+    <div class="flex main1">
+      <div class="mr-7 divs">
+        <h1 class="text-slate-800 font-bold pl-3 div">
           Always know what you pay
         </h1>
         <p class="mt-2 pl-3">
@@ -34,8 +34,8 @@
           Pricing details
         </button>
       </div>
-      <div id="divs" class="mr-7">
-        <p id="div" class="text-slate-800 font-bold  pl-3">
+      <div class="mr-7 divs">
+        <p class="text-slate-800 font-bold div pl-3">
           Start your integration
         </p>
         <p class="mt-2 pl-3">
@@ -59,25 +59,25 @@ export default {
 </script>
 
 <style scoped>
-#div{
+.div{
     border-left: 2px solid purple;
 }
 @media (max-width:780px){
-    #main{
+    .main{
         display: flex;
         flex-direction: column;
     }
-    #main1{
+    .main1{
         display: flex;
         flex-direction: column;
         margin-top: 50px;
         align-items: center;
         width: 100%;
     }
-    #divs{
+    .divs{
         width: 100%;
     }
-    #main1 div:nth-child(2){
+    .main1 div:nth-child(2){
         margin-top: 30px;
     }
 }

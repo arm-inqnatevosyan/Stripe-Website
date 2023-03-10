@@ -1,8 +1,8 @@
 <template>
-  <div id="full" class="w-full mx-auto flex justify-center">
-    <div id="main" class="w-33xl h-1/4 z-10 font-sans flex justify-between mx-auto mt-8">
-      <div id="texts" class="font-sans">
-        <div id="one-list" class="text-7xl font-bold">
+  <div class="w-full mx-auto flex justify-center full">
+    <div class="w-33xl h-1/4 z-10 font-sans flex justify-between mx-auto mt-8 main">
+      <div class="font-sans texts">
+        <div class="text-7xl font-bold one-list">
           <h3>Financial</h3>
           <h3>infrastructure</h3>
           <h3>for the internet</h3>
@@ -21,7 +21,7 @@
           </button>
         </div>
       </div>
-      <div id="iphone" class="w-70 h-3xl">
+      <div class="w-70 h-3xl iphone">
         <img src="/technology.png" class="w-full h-96">
       </div>
     </div>
@@ -34,24 +34,24 @@ export default {
 }
 </script>
 <style scoped>
-#full{
+.full{
     width: 100%;
     height: 50vh;
 }
-#main{
+.main{
     position: absolute;
     z-index: 10;
     margin-top: -130px !important;
 }
 @media (max-width:767px){
-  #full{
+  .full{
     width: 100%;
     height: 40vh;
 }
- #iphone{
+ .iphone{
     display: none;
  }
- #texts{
+ .texts{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,15 +59,15 @@ export default {
     margin-right: auto;
     text-align: left;
  }
- #one-list{
+ .one-list{
     font-size: 50px;
  }
-  #main{
+  .main{
     width: 100%;
   }
 }
 @media (max-width:560px){
-  #texts{
+  .texts{
     margin-left: 50px;
   }
 }

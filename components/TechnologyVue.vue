@@ -11,9 +11,9 @@
         and finance
       </p>
     </div>
-    <div id="main" class="mt-12 grid grid-rows-1 grid-cols-4 tall1:grid-cols-2 ml-0">
+    <div class="mt-12 grid grid-rows-1 grid-cols-4 tall1:grid-cols-2 ml-0 main">
       <div class="text-slate-700">
-        <h1 id="div" class="text-black font-bold pl-3">
+        <h1 class="text-black font-bold pl-3 div">
           Close to the metal
         </h1>
         <div class="pl-3">
@@ -26,8 +26,8 @@
           <p>every level of the financial stack.</p>
         </div>
       </div>
-      <div id="divp" class="text-slate-700  ml-8">
-        <h1 id="div" class="text-black font-bold pl-3">
+      <div class="text-slate-700 divp ml-8">
+        <h1 class="text-black font-bold pl-3 div">
           Fastest-improving platform
         </h1>
         <div class="p-3">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="text-slate-700 ml-8">
-        <h1 id="div" class="text-black font-bold pl-3">
+        <h1 class="text-black font-bold pl-3 div">
           Battle-tested reliability
         </h1>
         <div class="p-3">
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="text-slate-700">
-        <h1 id="div" class="text-black font-bold pl-3">
+        <h1 class="text-black font-bold pl-3 div">
           Intelligent optimizations
         </h1>
         <div class="p-3">
@@ -77,20 +77,20 @@ export default {
 }
 </script>
 <style scoped>
-#div{
+.div{
     border-left: 2px solid purple;
 }
 @media (max-width:768px){
-  #main{
+  .main{
   display: flex;
   flex-direction: column;
  }
- #main div{
+ .main div{
   margin-left: 0px;
  }
 }
 @media (max-width:1024px){
- #main div{
+ .main div{
   margin-left: 0px;
  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto w-33xl flex justify-center">
     <footer
-      class="bg-neutral-100 text-center text-neutral-600 lg:text-left"
+      class="bg-white text-center text-neutral-600 lg:text-left"
     >
       <div
         class="flex items-center justify-center mx-auto border-b-2 border-neutral-200 p-6 lg:justify-between"
